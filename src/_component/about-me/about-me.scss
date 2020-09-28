@@ -1,0 +1,85 @@
+.about-me {
+    background-image: radial-gradient(#336340, #86ad90);
+}
+
+.about-me__header{
+    color: white;
+    padding: 1rem, 2rem;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.about-me__avatar {
+    border-radius: 50%;
+    width: 100%;
+    border: 0.5rem  solid #86ad90 ;
+}
+
+.about-me__avatar-wrapper{
+    max-width: 25%;
+    margin: 1rem auto;
+    border:0.5rem solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    position: relative;
+
+
+    &::after {
+        content: "something";
+        position: absolute;
+        border:0.5rem solid rgba(255, 255, 255, 0.3);
+        top: -1.5rem;
+        bottom: -1.5rem;
+        left: -1.5rem;
+        right: -1.5rem;
+        border-radius: 50%;
+    }
+}
+
+.about-me__full-name {
+    font-size: 2.5rem;
+}
+
+.about-me__title{ 
+    font-size: 1.7rem;
+}
+
+.about-me__full-name, 
+.about-me__title{
+    padding: 0 1rem 2rem;
+    color:white;
+    text-align: center;
+}
+
+.about-me__slogan,
+.about-me__content{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 1rem;
+    text-indent: 3rem;
+}
+
+.about-me__link-list{
+    text-align: center;
+}
+
+.about-me__link{ 
+    display: inline-block;
+    width: 80%;
+    font-size: 3rem;
+    text-decoration: none;
+    border: 0.2rem solid #b5216b;
+    color: #56115c;
+    border-radius: 1rem;
+    background-color: white;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.about-me__link-description{
+    font-size: 1.5rem;
+    align-items: center;
+    line-height: 1.5;
+}
