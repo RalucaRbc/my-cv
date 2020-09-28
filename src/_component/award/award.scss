@@ -1,0 +1,8 @@
+.award__header {
+    color: $color-white;
+    @extend %header
+}
+
+.award {
+    background-image: radial-gradient($color-scarlet-gum, $color-maroon-flush);
+}

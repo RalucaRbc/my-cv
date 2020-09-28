@@ -1,18 +1,16 @@
 .about-me {
-    background-image: radial-gradient(#336340, #86ad90);
+    background-image: radial-gradient(ellipse, $color-killarney, $color-bay-leaf);
 }
 
 .about-me__header{
-    color: white;
-    padding: 1rem, 2rem;
-    margin-bottom: 1rem;
-    font-size: 4rem;
+    color: $color-white;
+    @extend %header
 }
 
 .about-me__avatar {
     border-radius: 50%;
     width: 100%;
-    border: 0.5rem  solid #86ad90 ;
+    border: 0.5rem  solid $color-bay-leaf ;
 }
 
 .about-me__avatar-wrapper{
@@ -24,7 +22,7 @@
 
 
     &::after {
-        content: "something";
+        content: "";
         position: absolute;
         border:0.5rem solid rgba(255, 255, 255, 0.3);
         top: -1.5rem;
@@ -67,10 +65,10 @@
     width: 80%;
     font-size: 3rem;
     text-decoration: none;
-    border: 0.2rem solid #b5216b;
-    color: #56115c;
+    border: 0.2rem solid $color-maroon-flush;
+    color: $color-scarlet-gum;
     border-radius: 1rem;
-    background-color: white;
+    background-color: $color-white;
     margin: 1rem auto;
     display: flex;
     justify-content: space-around;
