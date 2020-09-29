@@ -1,0 +1,18 @@
+.experience__header {
+    @extend %header;
+    color: $color-maroon-flush;
+}
+
+.experience{
+    background-color: $color-magic-mint;
+}
+
+.experience__details{
+    display: none;
+}
+
+.experience__input:checked +
+.experience__title +
+.experience__details{
+    display: inherit;
+}

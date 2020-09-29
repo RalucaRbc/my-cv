@@ -1,0 +1,56 @@
+//-the data comes here
+- 
+    var header = "#experience"
+    var experienceList= [
+        {
+            title: "Super Star HTML & CSS",
+            date: "September 2020", 
+            company:"Codetap",
+            responsabilityList: [
+                "Worked everyday for few hours a day to be a better web developer", 
+                "Stayed focused on the YouTube videos",
+                "Tried to do the tasks from the to-do-list before Marian did",
+                "Enough responsibilities, see you later :)"
+            ]
+        },
+        {
+            title: "Nothing 2",
+            date: "Date 2", 
+            company:"Company 2",
+            responsabilityList: [
+                "responsibility 2.1", 
+                "responsibility 2.2",
+                "responsibility 2.3",
+                "responsibility 2.4"
+            ]
+        },
+        {
+            title: "Nothing 3",
+            date: "Date 3", 
+            company:"Company 3",
+            responsabilityList: [
+                "responsibility 3.1", 
+                "responsibility 3.2",
+                "responsibility 3.3",
+                "responsibility 3.4"
+            ]
+        }
+    ]
+
+//-the view comes here
+#experience
+.experience
+    .experience__header=header
+    input(type="radio", name="same name", id="experience-default")
+    label(for="experience-default") &times;
+    each experience, key in experienceList
+        input.experience__input(type="radio",name="same name", id=`experience-id-${key}`)
+        label.experience__title(for=`experience-id-${key}`)=experience.title
+        .experience__details
+            .experience__top
+                .experience__date=experience.date
+                .experience__company=experience.company
+            .experience__list
+                each responsability in experience.responsabilityList
+                    .experience__responsability=responsability
+
