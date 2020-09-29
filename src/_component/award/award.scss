@@ -1,8 +1,55 @@
 .award__header {
-    color: $color-white;
+    color: $color-scarlet-gum;
     @extend %header
 }
 
 .award {
-    background-image: radial-gradient($color-scarlet-gum, $color-maroon-flush);
+    // background-image: radial-gradient($color-scarlet-gum, $color-maroon-flush);
+}
+
+.award__title{
+    font-weight: bold;
+}
+
+.award__card{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    border-bottom: 0.1rem solid $color-bay-leaf;
+    display: flex;
+    flex-wrap: wrap;
+
+    &>div{
+        border-bottom: 0.1rem solid $color-bay-leaf;
+    }
+
+    .award__icon{
+        width: 25%;
+        padding: 2.5rem;
+        font-size: 2.5rem;
+        color: $color-white;
+    }
+
+    &>div:nth-child(even){
+        width: 75%;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &>div:nth-child(1){
+        background-color: $color-magic-mint;
+    }
+    &>div:nth-child(3){
+        background-color: $color-ocean-green;
+    }
+    &>div:nth-child(4){
+        font-style: italic;
+    }
+    &>div:nth-child(5){
+        background-color: $color-malachite;
+    }
+    &>div:nth-child(7){
+        background-color: $color-salem;
+    }
 }
