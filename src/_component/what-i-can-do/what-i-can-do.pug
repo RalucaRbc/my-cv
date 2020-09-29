@@ -1,0 +1,31 @@
+//- the data comes here
+-
+    var header="#what I can do";
+    var whatICanDoList= [
+        {
+            title:"Front End",
+            skillList: [
+                "HTML5", 
+                "CSS3",
+                "Flower picker"
+            ]
+        },
+        {
+            title:"Back End",
+            skillList: [
+                "Git", 
+                "CLI", 
+                "Diva=]]"
+            ]
+        }
+    ];
+
+//-the view comes here
+#what-i-can-do
+.what-i-can-do
+    .what-i-can-do__header=header
+    each whatICanDo in whatICanDoList
+        .what-i-can-do__title=whatICanDo.title
+        .what-i-can-do__list
+            each skill in whatICanDo.skillList
+                .what-i-can-do__skill=skill
