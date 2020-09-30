@@ -3,10 +3,6 @@
     color: $color-maroon-flush;
 }
 
-.experience{
-    background-color: $color-magic-mint;
-}
-
 .experience__details{
     display: none;
 }
@@ -15,4 +11,63 @@
 .experience__title +
 .experience__details{
     display: inherit;
+}
+
+.experience__title{
+    background-color: $color-bay-leaf;
+    color: $color-white;
+    display: block;
+    font-size: 2rem;
+    padding: 1.7rem;
+    cursor: pointer;
+}
+
+.experience__input{
+    display: none;
+}
+
+.experience__details{
+    border: 0.2rem solid $color-maroon-flush;
+}
+
+.experience__top{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.experience__date{
+    font-style: italic;
+}
+
+.experience__company{
+    font-weight: bold;
+}
+
+.experience__responsability{
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;  
+    
+    &:nth-child(odd){
+        background-color: $color-perfume;
+    }
+
+    &:nth-child(even){
+        background-color: $color-white;
+    }
+}
+
+.my-cv__icon--plus{
+    float: right;
+    pointer-events: none;
+}
+
+.experience__input:checked + .experience__title {
+    .my-cv__icon--plus{ 
+        transform: rotateZ(45deg);
+        pointer-events: all;
+        cursor: pointer;
+    }
 }

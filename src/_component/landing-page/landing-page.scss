@@ -71,7 +71,7 @@
 .landing-page__box-close {
     background-color: $color-white;
     padding: 0.4rem;
-    $color-white-space: nowrap;
+    white-space: nowrap;
     line-height: 1.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -98,7 +98,7 @@
 .landing-page__box-link, 
 .landing-page__box-link:visited {
     font-size: 1.4rem;
-    $color-white-space: nowrap;
+    white-space: nowrap;
     text-decoration: none;
     overflow: hidden;
     text-overflow: ellipsis;
