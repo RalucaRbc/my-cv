@@ -16,7 +16,8 @@
 .experience__title{
     background-color: $color-bay-leaf;
     color: $color-white;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     font-size: 2rem;
     padding: 1.7rem;
     cursor: pointer;
@@ -60,7 +61,7 @@
 }
 
 .my-cv__icon--plus{
-    float: right;
+    //-float: right;
     pointer-events: none;
 }
 
